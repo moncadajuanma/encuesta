@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey</title>
+  </head>
+
+  <body>
+    <h1 class="title" id="title">Sondeo Final</h1>
+    <h5 class="description" id="description">
+      Gracias por responder con toda sinceridad
+    </h5>
+    <form class="formulario" id="survey-form">
+      <label id="name-label" for="name"
+        >Ingrese su nombre:
+        <input
+          class="datos-personales"
+          type="text"
+          id="name"
+          required
+          placeholder="nombres y apellidos"
+      /></label>
+      <label id="email-label" for="email"
+        >Ingrese su email:
+        <input
+          class="datos-personales"
+          type="email"
+          id="email"
+          required
+          placeholder="correo@correo.com"
+      /></label>
+      <label id="number-label" for="number"
+        >Ingrese su edad:
+        <input
+          class="datos-personales"
+          type="number"
+          id="number"
+          pattern="^[0-9]"
+          min="15"
+          max="100"
+          placeholder="años..."
+      /></label>
+      <label
+        >Cual es su ocupacion?
+        <select class="datos-personales" id="dropdown">
+          <option>Estudiante</option>
+          <option>Empleado</option>
+          <option>Desempleado</option>
+        </select>
+      </label>
+
+        <p>Como se entero acerca de este curso?</p>
+        <label for="redes-sociales"
+          ><input
+            id="redes-sociales"
+            type="radio"
+            name="canal-difusion"
+            value="redes-sociales"
+            checked
+          />
+          Redes Sociales</label
+        >
+        <label for="amigos"
+          ><input
+            id="amigos"
+            type="radio"
+            name="canal-difusion"
+            value="redes-sociales"
+          />
+          Amigos</label
+        >
+  
+      
+        <p>En que tema le gustaria profundizar?</p>
+        <label for="desarrollo-web">
+          <input class="inline" id="desarrollo-web" type="checkbox" name="desarrollo-web" value="desarrollo-web" checked>
+          Desarrollo Web
+        </label>
+        
+        <label for="responsividad">
+          <input class="inline" id="responsividad" type="checkbox" name="tema" value="responsividad" checked>
+          Responsividad
+        </label>
+        
+        <label for="front-end">
+          <input class="inline" id="front-end" type="checkbox" name="tema" value="front-end">
+          Front-End
+        </label>
+        
+        <label for="back-end">
+          <input class="inline" id="back-end" type="checkbox" name="tema" value="back-end">
+          Back-End
+        </label>
+        
+        
+      
+      <label for="sugerencias"
+        >Algun comentario o sugerencia?
+        <textarea
+          class="sugerencias id= "sugerencias"
+          name="sugerencias"
+          rows="8"
+          cols="30"
+          placeholder="En que podemos mejorar..."
+        ></textarea>
+      </label>
+      <button type="submit" id="submit">Enviar</button>
+    </form>
+    <footer>
+      
+      <p>FreeCodeCamp - Juan Manuel Moncada Orjuela - 2024</p><a href="https://github.com/moncadajuanma"><img src="icons8-github-50.png" alt="Icono de GitHub"></a>
+    </footer>
+  </body>
+</html>
