@@ -99,6 +99,10 @@ button:hover {
   opacity: 0.8;
 }
 
+#captcha {
+  margin: auto ;
+}
+
 footer {
   display: flex;
   justify-content: center;
