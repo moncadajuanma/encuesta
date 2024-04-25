@@ -39,19 +39,18 @@ h5 {
   height: 2.3rem;
   border-radius: 0.2rem;
   margin: 1.5rem auto;
-  padding: 0px;
+  padding: 0 0 0 0.3rem;
   border: none;
+}
 
+select {
+  padding: 0 .5rem;
 }
 
 label {
   display: block;
   width: 100%;
   margin-bottom: 1rem;
-}
-
-input::placeholder {
-  padding: 0.5rem;
 }
 
 p {
@@ -72,13 +71,9 @@ input[type="radio"] {
 }
 
 textarea {
-  padding: 0rem;
+  padding: 0.2rem 0 0 0.2rem;
   border: none;
-  margin-top: 0.5rem;
-}
-
-textarea::placeholder {
-  padding: 0.5rem;
+  margin: 0.5rem auto;
 }
 
 button {
